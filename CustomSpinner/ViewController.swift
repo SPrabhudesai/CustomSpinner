@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var spinner: SimpleSpinner!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        spinner.startAnimating()
+        spinner.tintColor = .purple
+        spinner.lineWidth = 5
     }
 
 
